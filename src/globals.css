@@ -1,0 +1,35 @@
+
+.tab-navigate {
+  display: flex;
+  height: 75px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+  background-color: #d9d9d9;
+}
+
+.background {
+  background: linear-gradient(to bottom, #fff, #d9d9d9);
+  height: 100vh;
+}
+
+.Menu-icon {
+  width: 70px;
+  height: 70px;
+  margin-top: auto;
+}
+
+.icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cicon {
+  width: 70px;
+  height: 70px;
+  margin-top: auto;
+}
