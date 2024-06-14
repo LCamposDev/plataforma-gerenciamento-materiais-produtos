@@ -21,7 +21,7 @@ O projeto foi desenvolvido com escopo fechado, incluindo:
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/plataforma-gerenciamento-materiais-produtos.git
+    git clone https://github.com/LCamposDev/plataforma-gerenciamento-materiais-produtos.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
