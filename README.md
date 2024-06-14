@@ -1,59 +1,70 @@
-# Documentação dos Arquivos do Projeto
+# Plataforma de Gerenciamento de Materiais e Produtos
 
-Este repositório contém arquivos relacionados a um projeto em PHP. Abaixo, você encontrará informações sobre cada arquivo e sua finalidade no projeto.
+## Visão Geral
 
-## Arquivos PHP
+Desenvolvemos uma plataforma web para otimizar o gerenciamento de materiais e produtos, automatizando processos, controlando o estoque e facilitando o acesso à informação.
 
-### `cadastro.php`
+## Metodologia
 
-Este arquivo PHP processa o formulário de cadastro de usuários. Ele insere novos registros no banco de dados, incluindo senhas criptografadas.
+O projeto foi desenvolvido com escopo fechado, incluindo:
+1. **Estudo de Caso e Análise de Requisitos**
+2. **Prototipação de Casos de Uso (UML)**
+3. **Design de Prototipagem**
+4. **Desenvolvimento Funcional**
 
-### `config.php`
+## Requisitos
 
-Este arquivo PHP contém as configurações de conexão com o banco de dados. Certifique-se de personalizar as constantes `HOST`, `USER`, `PASS` e `BASE` de acordo com sua configuração.
+- **Linguagem**: PHP
+- **Servidor Web**: Apache
 
-### `editar-usuario.php`
+## Instalação
 
-Este arquivo PHP é usado para editar informações do usuário. Ele permite que o usuário atualize seu nome, e-mail, senha e telefone.
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/plataforma-gerenciamento-materiais-produtos.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd plataforma-gerenciamento-materiais-produtos
+    ```
+3. Configure o Apache para apontar para o diretório do projeto.
+4. Certifique-se de ter PHP e Apache instalados e configurados corretamente.
 
-### `editar-vendas.php`
+## Configuração
 
-Este arquivo PHP permite editar informações de vendas. Os campos incluídos são tamanho, cor, prazo e produto.
+1. Edite `config.php` para ajustar as configurações do banco de dados.
+2. Inicie o servidor Apache:
+    ```bash
+    sudo service apache2 start
+    ```
 
-### `index.php`
+## Documentação dos Arquivos
 
-Este arquivo PHP é a página principal da aplicação, que requer que os usuários façam login. Ele também controla o roteamento das páginas, como cadastro de vendas e listagem de vendas.
+### Arquivos PHP
 
-### `listar-usuario.php`
+- **`cadastro.php`**: Processa o formulário de cadastro de usuários.
+- **`config.php`**: Configurações de conexão com o banco de dados.
+- **`editar-usuario.php`**: Edita informações do usuário.
+- **`editar-vendas.php`**: Edita informações de vendas.
+- **`index.php`**: Página principal que requer login.
+- **`listar-usuario.php`**: Lista os usuários cadastrados.
+- **`listar-vendas.php`**: Lista as vendas registradas.
+- **`login.php`**: Processa o formulário de login.
+- **`logout.php`**: Encerra a sessão do usuário.
+- **`novo-usuario.php`**: Formulário para criar um novo usuário.
+- **`novo-vendas.php`**: Cria um novo registro de vendas.
+- **`salvar-usuario.php`**: Lida com cadastro, edição e exclusão de usuários.
+- **`salvar-vendas.php`**: Processa a ação de salvar vendas.
 
-Esta página PHP lista os usuários cadastrados no sistema, exibindo seus nomes, cargos, e-mails, senhas e telefones.
+## Contribuição
 
-### `listar-vendas.php`
+1. Faça um fork do projeto.
+2. Crie uma branch (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Envie para o repositório (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
 
-Esta página PHP lista as vendas registradas no sistema, mostrando os detalhes de cada venda, como tamanho, cor, prazo e produto.
+## Licença
 
-### `login.php`
-
-Este arquivo PHP processa o formulário de login dos usuários. Ele verifica se o e-mail e a senha fornecidos correspondem aos registros no banco de dados.
-
-### `logout.php`
-
-Este arquivo PHP encerra a sessão de um usuário logado, redirecionando-o para a página de login.
-
-### `novo-usuario.php`
-
-Este arquivo PHP fornece um formulário para criar um novo usuário. Ele permite que o usuário insira informações como nome, cargo, e-mail, senha e telefone.
-
-### `novo-vendas.php`
-
-Este arquivo PHP é responsável por criar um novo registro de vendas. Ele coleta informações como tamanho, cor, prazo e produto.
-
-### `salvar-usuario.php`
-
-Este arquivo PHP lida com as ações de cadastro, edição e exclusão de usuários. Ele atualiza o banco de dados de acordo com as ações solicitadas.
-
-### `salvar-vendas.php`
-
-Este arquivo PHP processa a ação de salvar vendas, incluindo adicionar, editar e excluir registros de vendas no banco de dados.
-
-A documentação acima descreve cada arquivo presente no projeto, incluindo sua finalidade e ações relacionadas. Lembre-se de personalizar o banco de dados e as funcionalidades de acordo com as necessidades do seu projeto.
+Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
