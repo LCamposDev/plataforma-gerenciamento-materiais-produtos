@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Documentação dos Arquivos do Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositório contém arquivos relacionados a um projeto em PHP. Abaixo, você encontrará informações sobre cada arquivo e sua finalidade no projeto.
 
-## Available Scripts
+## Arquivos PHP
 
-In the project directory, you can run:
+### `cadastro.php`
 
-### `npm start`
+Este arquivo PHP processa o formulário de cadastro de usuários. Ele insere novos registros no banco de dados, incluindo senhas criptografadas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `config.php`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este arquivo PHP contém as configurações de conexão com o banco de dados. Certifique-se de personalizar as constantes `HOST`, `USER`, `PASS` e `BASE` de acordo com sua configuração.
 
-### `npm test`
+### `editar-usuario.php`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este arquivo PHP é usado para editar informações do usuário. Ele permite que o usuário atualize seu nome, e-mail, senha e telefone.
 
-### `npm run build`
+### `editar-vendas.php`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Este arquivo PHP permite editar informações de vendas. Os campos incluídos são tamanho, cor, prazo e produto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `index.php`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este arquivo PHP é a página principal da aplicação, que requer que os usuários façam login. Ele também controla o roteamento das páginas, como cadastro de vendas e listagem de vendas.
 
-### `npm run eject`
+### `listar-usuario.php`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Esta página PHP lista os usuários cadastrados no sistema, exibindo seus nomes, cargos, e-mails, senhas e telefones.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `listar-vendas.php`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Esta página PHP lista as vendas registradas no sistema, mostrando os detalhes de cada venda, como tamanho, cor, prazo e produto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### `login.php`
 
-## Learn More
+Este arquivo PHP processa o formulário de login dos usuários. Ele verifica se o e-mail e a senha fornecidos correspondem aos registros no banco de dados.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `logout.php`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este arquivo PHP encerra a sessão de um usuário logado, redirecionando-o para a página de login.
 
-### Code Splitting
+### `novo-usuario.php`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este arquivo PHP fornece um formulário para criar um novo usuário. Ele permite que o usuário insira informações como nome, cargo, e-mail, senha e telefone.
 
-### Analyzing the Bundle Size
+### `novo-vendas.php`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este arquivo PHP é responsável por criar um novo registro de vendas. Ele coleta informações como tamanho, cor, prazo e produto.
 
-### Making a Progressive Web App
+### `salvar-usuario.php`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este arquivo PHP lida com as ações de cadastro, edição e exclusão de usuários. Ele atualiza o banco de dados de acordo com as ações solicitadas.
 
-### Advanced Configuration
+### `salvar-vendas.php`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Este arquivo PHP processa a ação de salvar vendas, incluindo adicionar, editar e excluir registros de vendas no banco de dados.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A documentação acima descreve cada arquivo presente no projeto, incluindo sua finalidade e ações relacionadas. Lembre-se de personalizar o banco de dados e as funcionalidades de acordo com as necessidades do seu projeto.
