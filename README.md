@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Documentação dos Arquivos do Projeto
 
-## Getting Started
+Este repositório contém arquivos relacionados a um projeto em PHP. Abaixo, você encontrará informações sobre cada arquivo e sua finalidade no projeto.
 
-First, run the development server:
+## Arquivos PHP
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### `cadastro.php`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este arquivo PHP processa o formulário de cadastro de usuários. Ele insere novos registros no banco de dados, incluindo senhas criptografadas.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### `config.php`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Este arquivo PHP contém as configurações de conexão com o banco de dados. Certifique-se de personalizar as constantes `HOST`, `USER`, `PASS` e `BASE` de acordo com sua configuração.
 
-## Learn More
+### `editar-usuario.php`
 
-To learn more about Next.js, take a look at the following resources:
+Este arquivo PHP é usado para editar informações do usuário. Ele permite que o usuário atualize seu nome, e-mail, senha e telefone.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `editar-vendas.php`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Este arquivo PHP permite editar informações de vendas. Os campos incluídos são tamanho, cor, prazo e produto.
 
-## Deploy on Vercel
+### `index.php`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este arquivo PHP é a página principal da aplicação, que requer que os usuários façam login. Ele também controla o roteamento das páginas, como cadastro de vendas e listagem de vendas.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `listar-usuario.php`
+
+Esta página PHP lista os usuários cadastrados no sistema, exibindo seus nomes, cargos, e-mails, senhas e telefones.
+
+### `listar-vendas.php`
+
+Esta página PHP lista as vendas registradas no sistema, mostrando os detalhes de cada venda, como tamanho, cor, prazo e produto.
+
+### `login.php`
+
+Este arquivo PHP processa o formulário de login dos usuários. Ele verifica se o e-mail e a senha fornecidos correspondem aos registros no banco de dados.
+
+### `logout.php`
+
+Este arquivo PHP encerra a sessão de um usuário logado, redirecionando-o para a página de login.
+
+### `novo-usuario.php`
+
+Este arquivo PHP fornece um formulário para criar um novo usuário. Ele permite que o usuário insira informações como nome, cargo, e-mail, senha e telefone.
+
+### `novo-vendas.php`
+
+Este arquivo PHP é responsável por criar um novo registro de vendas. Ele coleta informações como tamanho, cor, prazo e produto.
+
+### `salvar-usuario.php`
+
+Este arquivo PHP lida com as ações de cadastro, edição e exclusão de usuários. Ele atualiza o banco de dados de acordo com as ações solicitadas.
+
+### `salvar-vendas.php`
+
+Este arquivo PHP processa a ação de salvar vendas, incluindo adicionar, editar e excluir registros de vendas no banco de dados.
+
+A documentação acima descreve cada arquivo presente no projeto, incluindo sua finalidade e ações relacionadas. Lembre-se de personalizar o banco de dados e as funcionalidades de acordo com as necessidades do seu projeto.
