@@ -67,4 +67,3 @@ O projeto foi desenvolvido com escopo fechado, incluindo:
 ## Licença
 
 Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
